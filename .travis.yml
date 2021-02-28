@@ -8,7 +8,11 @@ os:
   - linux
   - osx
   - windows
-
+services:
+  - docker
+arch:
+  - amd64
+  - arm64
 notifications:
   email: false
 before_install:
