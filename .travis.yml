@@ -12,7 +12,6 @@ services:
   - docker
 arch:
   - arm64
-  - amd64
 env:
   matrix:
     - ""
