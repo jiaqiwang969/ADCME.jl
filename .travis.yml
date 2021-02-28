@@ -11,8 +11,15 @@ os:
 services:
   - docker
 arch:
-  - amd64
   - arm64
+  - amd64
+env:
+  matrix:
+    - ""
+    - "CMAKE_JL_BUILD_FROM_SOURCE=1"
+    - "BINARYPROVIDER_COPYDEREF=true"
+    - "CMAKE_JL_BUILD_FROM_SOURCE=1"
+
 notifications:
   email: false
 before_install:
